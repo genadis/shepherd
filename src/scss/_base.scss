@@ -48,7 +48,7 @@
       }
 
       .#{$namespace-prefix}-cancel-link {
-        color: lighten(map_get($shepherd-theme-text-colors, header), 70);
+        color: get-lighter-or-darker(map_get($shepherd-theme-text-colors, text), 70);
         font-size: 2em;
         margin-left: auto;
         text-decoration: none;
@@ -59,7 +59,7 @@
         }
 
         &:hover {
-          color: map_get($shepherd-theme-text-colors, header);
+          color: map_get($shepherd-theme-text-colors, text);
         }
       }
     }
@@ -113,5 +113,11 @@
   .#{$namespace-prefix}-content header {
     background: $shepherd-header-background;
     padding: 1em;
+    .#{$namespace-prefix}-cancel-link {
+      color: get-lighter-or-darker(map_get($shepherd-theme-text-colors, header), 70);
+      &:hover {
+        color: map_get($shepherd-theme-text-colors, header);
+      }
+    }
   }
 }

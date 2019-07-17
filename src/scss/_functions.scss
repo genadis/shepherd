@@ -9,3 +9,12 @@
     @return #ffffff;
   }
 }
+
+@function get-lighter-or-darker($color, $amount) {
+  @if (lightness($color) > 60) {
+    @return darken($color, 100 - $amount);
+  }
+  @else {
+    @return lighten($color, $amount);
+  }   
+}
