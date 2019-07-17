@@ -18,6 +18,7 @@
     font-size: inherit;
     outline: none;
     padding: 0;
+    border-radius: $shepherd-element-border-radius;
 
     header {
       @include pie-clearfix;
