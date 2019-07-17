@@ -7,12 +7,6 @@
     .#{$tippy-namespace-prefix}-arrow {
       border-top-color: $text-bg;
     }
-
-    &.#{$namespace-prefix}-has-title {
-      .#{$tippy-namespace-prefix}-arrow {
-        border-top-color: $header-bg;
-      }
-    }
   }
 
   &[x-placement^='bottom'] {
@@ -35,12 +29,6 @@
     .#{$tippy-namespace-prefix}-arrow {
       border-left-color: $text-bg;
     }
-
-    &.#{$namespace-prefix}-has-title {
-      .#{$tippy-namespace-prefix}-arrow {
-        border-left-color: $header-bg;
-      }
-    }
   }
 
   &[x-placement^='right'] {
@@ -48,12 +36,6 @@
 
     .#{$tippy-namespace-prefix}-arrow {
       border-right-color: $text-bg;
-    }
-
-    &.#{$namespace-prefix}-has-title {
-      .#{$tippy-namespace-prefix}-arrow {
-        border-right-color: $header-bg;
-      }
     }
   }
 }
